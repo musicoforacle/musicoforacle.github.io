@@ -1,11 +1,23 @@
+@font-face {
+font-family: 'PressStart';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+
+
+
 body {
     background-image: url(http://33.media.tumblr.com/151402cdcf6c2d6c0e3da0a42fd28a75/tumblr_n01bvoslYr1six59bo1_400.gif);
+    background-attachment: fixed;
     /*background-size: cover;*/
     /*width: 1080px*/
     /*background-repeat: no-repeat;*/
+
 }
 
-.nav, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
+/*.nav, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
                         .nav-tabs > li.active > a:focus, .nav-tabs > li > a {
                             border: none;
                             color: #CCA3CC;
@@ -31,15 +43,17 @@ body {
 .nav a{
     display:inline-block;
     padding:10px;
-}
+}*/
 
 h3 {
     text-align: center;
     color: #DEDEFF;
+    font-family: 'Press Start 2P';
 }
 h2 {
     text-align: center;
     color: #DEDEFF;
+    font-family: 'Press Start 2P';
 
 }
 
@@ -47,10 +61,12 @@ p {
     text-align: center;
     color: #FFE6FF;
     font-size: 16pt;
+    font-family: 'Press Start 2P';
 }
 
 h5 {
     color: #DEDEFF;
+    font-family: 'Press Start 2P';
 }
 
 
@@ -61,6 +77,16 @@ h5 {
 
 .fade:hover {    
     opacity:1;
+/*    background:#53a7ea;*/
+}
+
+
+.emailtxt {
+    text-align: left;
+}
+
+form {
+    text-align: center;
 }
 
 
@@ -68,4 +94,47 @@ h5 {
 
 
 
+/*CODE FOR NAVBAR CUSTOMIZATION BELOW*/
 
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(222, 222, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 17px;
+    background-color: rgba(128, 61, 61, 0.44);
+    border-width: 4px;
+    border-radius: 25px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(222, 222, 255, 1);
+    background-color: rgba(222, 222, 255, 0);
+    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(222, 222, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(222, 222, 255, 0) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(222, 222, 255, 1);
+    background-color: rgba(123, 123, 176, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(222, 222, 255, 1);
+    background-color: rgba(158, 89, 158, 1);
+    background: -webkit-linear-gradient(top, rgba(176, 106, 106, 1) 0%, rgba(158, 89, 158, 1) 100%);
+    background: linear-gradient(to bottom, rgba(176, 106, 106, 1) 0%, rgba(158, 89, 158, 1) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #9e599e;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #9e599e;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #9e599e;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #803d3d;
+}
